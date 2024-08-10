@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Document</title>
+</head>
+<body onload="DefaultScreen()" style="background-color: rgb(64, 128, 128);">
+
+    <center>
+        <h1 style="font-family: 'Monotype Corsiva'; font-size: 50px;color: rgb(182, 218, );">5 Days Weather Forecast</h1>
+        <p id="inputContainer" class ="inputContainer">
+		
+		
+		
+		<input type="text" required id="cityInput">
+        <label for="">CITY</label>
+		
+		
+		
+		</p>
+        
+		
+		
+		
+		
+		
+		
+		<button class="btn" onclick="GetInfo()" >Click Me</button>
+        
+		
+		
+		
+		
+		<h2 id="cityName"></h2>
+        <!-- New elements for current weather info -->
+        <!--<div id="currentWeather" style="border: 2px solid black;">-->
+            <p id="currentTemp">Temperature: Loading...</p>
+            <p id="currentHumidity">Humidity: Loading...</p>
+            <p id="currentWind">Wind Speed: Loading...</p>
+        <!--</div>-->
+    </center>
+
+    <div id="weatherContainer"  >
+        <div id="iconsContainer" >
+            <div class="icons"style="border: 4px solid rgb(173,173,173);;background-color:rgb(163,209,209)";>
+                <p class="weather" id="day1"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                <p class="minValues" id="day1Min">Loading...</p>
+                <p class="maxValues" id="day1Max">Loading...</p>
+            </div>
+            <div class="icons"style="border: 4px solid rgb(173,173,173);;background-color:rgb(163,209,209)";>
+                <p class="weather" id="day2"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                <p class="minValues" id="day2Min">Loading...</p>
+                <p class="maxValues" id="day2Max">Loading...</p>
+            </div>
+            <div class="icons"style="border: 4px solid rgb(173,173,173);;background-color:rgb(163,209,209)";>
+                <p class="weather" id="day3"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                <p class="minValues" id="day3Min">Loading...</p>
+                <p class="maxValues" id="day3Max">Loading...</p>
+            </div>
+            <div class="icons"style="border: 4px solid rgb(173,173,173);;background-color:rgb(163,209,209)";>
+                <p class="weather" id="day4"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                <p class="minValues" id="day4Min">Loading...</p>
+                <p class="maxValues" id="day4Max">Loading...</p>
+            </div>
+            <div class="icons"style="border: 4px solid rgb(173,173,173);;background-color:rgb(163,209,209)";>
+                <p class="weather" id="day5"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                <p class="minValues" id="day5Min">Loading...</p>
+                <p class="maxValues" id="day5Max">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
